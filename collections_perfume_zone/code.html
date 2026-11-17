@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfume Zone - The Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#241a00",
+                      "inverse-primary": "#c9c6c5",
+                      "on-primary-fixed": "#1c1b1b",
+                      "tertiary-fixed": "#e3e3de",
+                      "on-tertiary-fixed": "#1a1c19",
+                      "surface-container-highest": "#e4e2e1",
+                      "secondary-fixed-dim": "#e9c349",
+                      "primary-fixed": "#e5e2e1",
+                      "surface-bright": "#fcf9f8",
+                      "on-secondary-fixed-variant": "#574500",
+                      "secondary-fixed": "#ffe088",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#c4c7c7",
+                      "surface-container-lowest": "#ffffff",
+                      "outline": "#747878",
+                      "tertiary-fixed-dim": "#c6c7c2",
+                      "on-tertiary-fixed-variant": "#454744",
+                      "inverse-surface": "#303030",
+                      "on-background": "#1b1c1c",
+                      "on-primary-container": "#858383",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#444748",
+                      "secondary-container": "#fed65b",
+                      "on-surface": "#1b1c1c",
+                      "primary-container": "#1c1b1b",
+                      "error-container": "#ffdad6",
+                      "background": "#fcf9f8",
+                      "tertiary": "#000000",
+                      "secondary": "#735c00",
+                      "surface-container-low": "#f6f3f2",
+                      "on-error-container": "#93000a",
+                      "surface": "#fcf9f8",
+                      "surface-container": "#f0eded",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#1a1c19",
+                      "primary": "#000000",
+                      "on-secondary-container": "#745c00",
+                      "primary-fixed-dim": "#c9c6c5",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dcd9d9",
+                      "on-tertiary-container": "#838480",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e4e2e1",
+                      "surface-tint": "#5f5e5e",
+                      "on-primary-fixed-variant": "#474646",
+                      "inverse-on-surface": "#f3f0ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "label-caps": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "button": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background-color: rgba(245, 245, 240, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20 pb-20">
+<!-- TopAppBar -->
+<header class="bg-surface/60 backdrop-blur-xl border-b border-outline-variant/30 fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 transition-all duration-300 ease-in-out">
+<button aria-label="Menu" class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md tracking-tighter text-primary text-center">PERFUME ZONE</h1>
+<button aria-label="Shopping Bag" class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</header>
+<main class="flex-grow container mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop py-12">
+<!-- Page Title -->
+<div class="text-center mb-12">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">The Collection</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl mx-auto">Discover our meticulously curated selection of artisanal fragrances, designed for the modern connoisseur.</p>
+</div>
+<!-- Filters -->
+<div class="mb-12 overflow-x-auto no-scrollbar pb-4">
+<div class="flex space-x-4 md:justify-center min-w-max px-4">
+<button class="px-6 py-2 border border-primary text-on-background font-label-caps text-label-caps hover:bg-surface-container-high transition-colors">ALL</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-caps text-label-caps hover:border-primary hover:text-primary transition-colors">FLORAL</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-caps text-label-caps hover:border-primary hover:text-primary transition-colors">WOODY</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-caps text-label-caps hover:border-primary hover:text-primary transition-colors">ORIENTAL</button>
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant font-label-caps text-label-caps hover:border-primary hover:text-primary transition-colors">FRESH</button>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-section-gap">
+<!-- Product Card 1 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden border border-outline-variant/10">
+<img alt="Santal Mystique" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A luxury perfume bottle with an elegant, minimalist design, resting on a smooth marble surface. The lighting is soft and high-key, creating a moody yet bright aesthetic. The overall palette is muted cream with sharp obsidian accents, evoking quiet luxury and high fashion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTJp1uqw5-LVaBy8gqYuFjG463S1cpquqn-aoWclQRWNHeRN342ROzCnskM-XJODnX8Q7bDhdJVP4wIe8P2-4fMmRGoJi-HNWpwzCJe6rbCMZjR_o07G3odg0qXaf4MMIOKh9LOOTghwv9uiHKKNkWP0nh7Sn7PpAIly2mzwPBmTJ6VggWVKF9E-EuXNOfjZHDETBqIP_Py3gSXLumTwz7UFsjS0hhPKbgZSbx7FBnKx81uoqPwPdi1A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Santal Mystique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Sandalwood, Cardamom, Leather</p>
+<div class="flex justify-center items-center space-x-1 mb-4 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star_half" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
+<span class="font-body-lg text-body-lg font-medium">$240</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-button text-button hover:bg-primary transition-colors w-full sm:w-auto">QUICK ADD</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden border border-outline-variant/10">
+<img alt="Rose Noir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A sophisticated dark glass perfume bottle surrounded by subtle shadows and a hint of warm gold lighting. The setting is a minimalist gallery space with high contrast, emphasizing the glassmorphic quality of the bottle. The aesthetic is moody, exclusive, and editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtBN_m7-U1GjF16AfCCZkdzCNsj4XHVOBHINeS_MGbf3OO5oPQ2KZrnGWD4yZxYhxmXSKRkowp9MUXFxeajzkPeko1NayodQFK-62P-LOb0Ma6_vBwC1N4jVcw0xlgx2fvXxx0jY-Ju4_HvMSjaJL7Y8PCKqu1YqNc5HJe-jL0Ff950EJrEgAJmoaOZnsqxZT8D_vaT8OlruAW6pFzRKCQqg23Q1T6LeTXw8JHmWMdXZgBS99jDK_xyQ"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Rose Noir</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Black Rose, Patchouli, Oud</p>
+<div class="flex justify-center items-center space-x-1 mb-4 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
+<span class="font-body-lg text-body-lg font-medium">$280</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-button text-button hover:bg-primary transition-colors w-full sm:w-auto">QUICK ADD</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden border border-outline-variant/10">
+<img alt="Aqua Vitae" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A transparent, crystal-clear perfume bottle catching bright, serene sunlight. The background is a vast, empty cream-colored canvas, reflecting a modern minimalist design. The lighting is pristine and airy, focusing entirely on the sleek contours of the bottle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX4OEZVZI3EDgfEXii_96HOcAzw2oe_ag1udaLYWGfM_vIYoHDAgdNJwnOVtH6OMgTSt_AhM-HXy5peXv07CpAaa92_G-AVyu4L6kbEQ8bUqtTqbdeR_wbw7Rc7oj-1rGrT_82G4WAPXHNt_doqoSE_9C4TiOUXZpRsDYxYO6JhCbzACK8M6S4AvmNIttIg3rHLY2mwVJtMP-X53rZPA807oVbIq7o_dAk9EC0p7VEJwEURGHjxlYFCA"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Aqua Vitae</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Bergamot, Sea Salt, Vetiver</p>
+<div class="flex justify-center items-center space-x-1 mb-4 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star_border">star_border</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
+<span class="font-body-lg text-body-lg font-medium">$195</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-button text-button hover:bg-primary transition-colors w-full sm:w-auto">QUICK ADD</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden border border-outline-variant/10">
+<img alt="Amber Haze" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An amber-colored glass perfume bottle glowing subtly against a deep obsidian background. Soft ambient shadows with a hint of warm gold create a mysterious, exclusive atmosphere. The composition is highly editorial, showcasing the luxury and depth of the fragrance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwdwwyCUIUSI00gC5l0jG4cv6oaLJW-O2_pVQ6tm4yN4W4S_wUw7-6opZEUTKLVsNttgk5zLlspJ8mWSiCSQAiIBa5OKS8EzOf6MxF7LdmhfiVmwl_n-Q1OXAtYbbvP27nuUvbZ_ODjocrra4A1ptEwfp0vzCr8veidoWK8Roj2RFxfrjiW5oB_f3wJgSVh89kYC7u-iBCoRxBISlos39n7MyPdh6T0nBalnnneqhIyje1tGv4clyh4w"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Amber Haze</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Vanilla, Amber, Musk</p>
+<div class="flex justify-center items-center space-x-1 mb-4 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star_half" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
+<span class="font-body-lg text-body-lg font-medium">$220</span>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-button text-button hover:bg-primary transition-colors w-full sm:w-auto">QUICK ADD</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface/80 backdrop-blur-lg border-t border-outline-variant/20 fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-4 md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary scale-110 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="search" data-weight="fill" style="font-variation-settings: 'FILL' 1;">search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+</body></html>
